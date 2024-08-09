@@ -1,0 +1,56 @@
+div.header {
+    height: 160.5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    transition: 0.3s;
+}
+
+.hidden {
+    transform: translateY(-160.5px);
+    visibility: hidden;
+}
+
+img#logo {
+    width: 130px;
+    height: 97.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg#magnifying-glass-icon, svg#cart-icon {
+    position: absolute;
+    cursor: pointer;
+}
+
+@media (min-width: 500px) and (max-width: 1023px) {
+    div.header {
+        width: 100vw;
+    }
+
+    svg#magnifying-glass-icon {
+        left: 35px;
+    }
+
+    svg#cart-icon {
+        right: 35px;
+    }
+}
+
+@media (min-width: 1024px) {
+    div.header {
+        width: calc(100vw - 320px);
+        margin-left: 160px;
+    }
+
+    svg#magnifying-glass-icon {
+        right: 120px;
+    }
+
+    svg#cart-icon {
+        right: 50px;
+    }
+}

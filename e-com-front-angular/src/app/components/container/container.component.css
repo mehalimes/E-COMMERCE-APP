@@ -1,0 +1,7 @@
+div.container {
+    width: calc(100vw - 320px);
+    height: 1495px;
+    margin-left: 160px;
+    transform: translateY(160.5px);
+    border: 1px solid black;
+}
