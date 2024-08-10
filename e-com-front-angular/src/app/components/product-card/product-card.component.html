@@ -1,0 +1,7 @@
+<div class="product-card">
+    <div class="product-image">
+        <div *ngIf="stockStatus === 0" class="stock-status">Sold out</div>
+    </div>
+    <div class="product-name">{{ productName }}</div>
+    <div class="product-price">₺{{ productPrice }} TRY</div>
+</div>

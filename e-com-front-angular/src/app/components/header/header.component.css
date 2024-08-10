@@ -32,25 +32,25 @@ svg#magnifying-glass-icon, svg#cart-icon {
     }
 
     svg#magnifying-glass-icon {
-        left: 35px;
+        left: 30px;
     }
 
     svg#cart-icon {
-        right: 35px;
+        right: 30px;
     }
 }
 
 @media (min-width: 1024px) {
     div.header {
-        width: calc(100vw - 320px);
-        margin-left: 160px;
+        width: calc(100vw - 114px);
+        margin-left: 57px;
     }
 
     svg#magnifying-glass-icon {
-        right: 120px;
+        right: 80px;
     }
 
     svg#cart-icon {
-        right: 50px;
+        right: 10px;
     }
 }
