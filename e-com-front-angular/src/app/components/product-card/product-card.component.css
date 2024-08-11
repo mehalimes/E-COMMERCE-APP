@@ -28,23 +28,26 @@ div.product-image {
 
 div.product-name {
     color: #121212;
-    font-size: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: white;
     font-weight: 370;
+    min-height: 71px;
+    display: flex;
+    align-items: center;
+}
+
+div.product-price {
+    color: #121212;
+    font-size: 20px;
+    background-color: white;
 }
 
 @media (min-width: 500px) and (max-width: 1023px) {
     div.product-card {
         width: 44.4vw;
         height: 59vw;
-        background-color: white;
-    }
-    
-    div.product-price {
-        color: #121212;
-        font-size: 20px;
         background-color: white;
     }
 

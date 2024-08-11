@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductCardComponent {
   @Input() productImage: string;
-  @Input() stockStatus: number;
+  @Input() stockCount: number;
   @Input() productName: string;
   @Input() productPrice: number;
 }

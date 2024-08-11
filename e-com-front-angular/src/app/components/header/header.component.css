@@ -5,6 +5,7 @@ div.header {
     align-items: center;
     position: fixed;
     transition: 0.3s;
+    z-index: 10;
 }
 
 .hidden {

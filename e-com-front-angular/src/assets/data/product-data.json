@@ -1,0 +1,80 @@
+[
+    {
+        "productImage" : "./../../../assets/images/bag.webp",
+        "stockCount": "10",
+        "productName" : "Whoever can correctly guess what dish I'm making will get a bajillion points",
+        "productPrice" : "20"
+    },
+    {
+        "productImage" : "./../../../assets/images/beanie.webp",
+        "stockCount": "10",
+        "productName" : "Kulfi Mind",
+        "productPrice" : "26.5"
+    },
+    {
+        "productImage" : "./../../../assets/images/cap.webp",
+        "stockCount": "10",
+        "productName" : "WHAT ARE YOU? (big brain)",
+        "productPrice" : "29.5"
+    },
+    {
+        "productImage" : "./../../../assets/images/cookbook.webp",
+        "stockCount": "0",
+        "productName" : "COOKBOOK: Beyond Measure - Pakistani Cooking by Feel with GoldenGully",
+        "productPrice" : "42"
+    },
+    {
+        "productImage" : "./../../../assets/images/hoodie.webp",
+        "stockCount": "10",
+        "productName" : "It's Cold Outside",
+        "productPrice" : "41"
+    },
+    {
+        "productImage" : "./../../../assets/images/mug.webp",
+        "stockCount": "10",
+        "productName" : "Is it Chai or Cha",
+        "productPrice" : "18"
+    },
+    {
+        "productImage" : "./../../../assets/images/sweat.webp",
+        "stockCount": "10",
+        "productName" : "WHAT ARE YOU?",
+        "productPrice" : "19"
+    },
+    {
+        "productImage" : "./../../../assets/images/tshirt1.webp",
+        "stockCount": "10",
+        "productName" : "Kulfi In My Heart",
+        "productPrice" : "28"
+    },
+    {
+        "productImage" : "./../../../assets/images/tshirt2.jpg",
+        "stockCount": "10",
+        "productName" : "What are Saturdays?",
+        "productPrice" : "19"
+    },
+    {
+        "productImage" : "./../../../assets/images/tshirt3.webp",
+        "stockCount": "10",
+        "productName" : "What's KULFI",
+        "productPrice" : "19"
+    },
+    {
+        "productImage" : "./../../../assets/images/tshirt4.webp",
+        "stockCount": "10",
+        "productName" : "What's KULFI (hide ya skin)",
+        "productPrice" : "34.5"
+    },
+    {
+        "productImage" : "./../../../assets/images/tshirt5.jpg",
+        "stockCount": "10",
+        "productName" : "WHAT ARE YOU? (hide ya skin)",
+        "productPrice" : "34.5"
+    },
+    {
+        "productImage" : "./../../../assets/images/tshirt6.webp",
+        "stockCount": "10",
+        "productName" : "What are Saturdays? (hide ya skin)",
+        "productPrice" : "34.5"
+    }
+]
