@@ -23,6 +23,5 @@ export class ContainerComponent {
       productName: product.productName,
       productPrice: Number(product.productPrice)
     }));
-    console.log(this.Products);
   }
 }

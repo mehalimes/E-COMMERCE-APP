@@ -1,3 +1,77 @@
 div.footer {
+    width: 100vw;
+    background-color: white;
+    border-top: 1px solid lightgrey;
+}
+
+div.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 111px;
+}
+
+div.footer-left {
+    width: 50%;
+    height: 100%;
     background-color: blue;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+div.footer-right {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#iyzico-logo {
+    width: 90px;
+    height: auto;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-weight: 400;
+    color: gray;
+    font-size: 13px;
+}
+
+button {
+    width: 101px;
+    height: 12px;
+    padding-left: 21px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+@media (max-width: 1023px){
+    div.footer {
+        height: 315px;
+        transform: translateY(202px);
+    }
+}
+
+@media (min-width: 1024px){
+    div.footer {
+        height: 293px;
+        transform: translateY(153px);
+    }
 }

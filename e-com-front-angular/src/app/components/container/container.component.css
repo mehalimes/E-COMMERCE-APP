@@ -1,17 +1,16 @@
 div.container {
-    height: 1495px;
+    height: auto;
     transform: translateY(160.5px);
 }
 
-
-@media (min-width: 500px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     div.container {
         width: calc(100vw - 28px);
         margin-left: 14px;
     }
     
     div.container > * {
-        margin: 4px;
+        margin: 6px;
     }
 }
 
@@ -20,6 +19,7 @@ div.container {
         width: calc(100vw - 114px);
         margin-left: 57px;
     }
+
     div.container > * {
         margin: 10px;
     }    
