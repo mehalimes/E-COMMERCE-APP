@@ -21,6 +21,6 @@ export class HeaderComponent {
     else {
       this.isHidden = false;
     }
-    this.lastScrollTop = scrollYOffset <= 0 ? 0 : scrollYOffset;
+    this.lastScrollTop = scrollYOffset;
   }
 }

@@ -1,91 +1,29 @@
-div.product-card {
-    cursor: pointer;
+/* xs */
+@media (max-width: 576px){
+
 }
 
-div.stock-status {
-    color: white;
-    background-color: black;
-    width: 95px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    font-size: 15px; 
+/* sm */
+@media (min-width: 577px) and (min-width: 768px) {
+
 }
 
-div.product-image {
-    background-image: url("./../../../assets/images/cookbook.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    width: 100%;
-    height: 75%;
-    position: relative;
-    transition: background-size 0.5s ease;
+/* md */
+@media (min-width: 769px) and (max-width: 1024px) {
+
 }
 
-div.product-name {
-    color: #121212;
-    font-size: 17px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: white;
-    font-weight: 370;
-    min-height: 71px;
-    display: flex;
-    align-items: center;
+/* lg */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
 }
 
-div.product-price {
-    color: #121212;
-    font-size: 20px;
-    background-color: white;
+/* xl */
+@media (min-width: 1281px) and (max-width: 1536px) {
+
 }
 
-@media (min-width: 500px) and (max-width: 1023px) {
-    div.product-card {
-        width: 44.4vw;
-        height: 59vw;
-        background-color: white;
-    }
+/* 2xl */
+@media (min-width: 1537px){
 
-    div.stock-status {
-        position: absolute;
-        left: 10px;
-        bottom: 8px;
-    }
-}
-
-div.product-card:hover div.product-image {
-    background-size: 105%;
-}
-
-@media (min-width: 1024px) {
-    div.product-card {
-        width: 21.64vw;
-        height: 31.11vw;
-        background-color: white;
-    }
-
-    div.product-card:hover div.product-name {
-        text-decoration: underline;
-        text-underline-offset: 3px;
-    }
-
-    div.product-image {
-        width: 100%;
-        height: 69%;
-    }
-
-    div.stock-status {
-        position: absolute;
-        left: 10px;
-        bottom: 10px;
-    }
-}
-
-:host {
-    display: inline-block;
 }
