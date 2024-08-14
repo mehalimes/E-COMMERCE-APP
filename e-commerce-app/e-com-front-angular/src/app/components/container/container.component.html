@@ -1,8 +1,6 @@
-<div class="container">
-    <app-product-card *ngFor="let product of Products"
-        [productImage]="product.productImage"
-        [stockCount]="product.stockCount"
-        [productName]="product.productName"
-        [productPrice]="product.productPrice"
-    ></app-product-card>
-</div>
+<app-product-card *ngFor="let product of Products"
+    [productImage]="product.productImage"
+    [stockCount]="product.stockCount"
+    [productName]="product.productName"
+    [productPrice]="product.productPrice"
+></app-product-card>

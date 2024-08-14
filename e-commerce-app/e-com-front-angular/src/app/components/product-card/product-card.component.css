@@ -20,10 +20,132 @@
 
 /* xl */
 @media (min-width: 1281px) and (max-width: 1536px) {
+    div.product-card {
+        width: 263px;
+        height: 378px;
+    }
 
+    div.product-card:hover div.product-name {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    div.product-card:hover div.product-image {
+        background-size: 105%;
+    }
+
+    div.product-image {
+        height: 263px;
+        width: 263px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    div.product-name {
+        width: 263px;
+        height: auto;
+        padding-top: 17px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    div.product-price {
+        padding-bottom: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    :host {
+        display: inline-block;
+        width: 263px;
+        height: 378px;
+    }
+
+    div.stock-status {
+        width: 82px;
+        height: 26px;
+        background-color: rgb(18, 18, 18);
+        color: #cfcfcf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        border-radius: 5px;
+        font-weight: 500;
+        position: absolute;
+        bottom: 12px;
+        left: 10px;
+    }
 }
 
 /* 2xl */
 @media (min-width: 1537px){
+    div.product-card {
+        width: 263px;
+        height: 378px;
+    }
 
+    div.product-card:hover div.product-name {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    div.product-card:hover div.product-image {
+        background-size: 105%;
+    }
+
+    div.product-image {
+        height: 263px;
+        width: 263px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    div.product-name {
+        width: 263px;
+        height: auto;
+        padding-top: 17px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    div.product-price {
+        padding-bottom: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    :host {
+        display: inline-block;
+        width: 263px;
+        height: 378px;
+    }
+
+    div.stock-status {
+        width: 82px;
+        height: 26px;
+        background-color: rgb(18, 18, 18);
+        color: #cfcfcf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        border-radius: 5px;
+        font-weight: 500;
+        position: absolute;
+        bottom: 12px;
+        left: 10px;
+    }
 }

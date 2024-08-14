@@ -20,10 +20,38 @@
 
 /* xl */
 @media (min-width: 1281px) and (max-width: 1536px) {
+    :host {
+        display: block;
+        width: 1200px;
+        height: auto;
+        max-height: 1585px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transform: translateY(160px);
+        margin-left: calc((100vw - 1200px) / 2);
+        overflow-y: hidden;
+    }
 
+    :host > * {
+        margin: 5px;
+    }
 }
 
 /* 2xl */
 @media (min-width: 1537px){
+    :host {
+        display: block;
+        width: 1200px;
+        height: auto;
+        max-height: 1585px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transform: translateY(160px);
+        margin-left: calc((100vw - 1200px) / 2);
+        overflow-y: hidden;
+    }
 
+    :host > * {
+        margin: 5px;
+    }
 }

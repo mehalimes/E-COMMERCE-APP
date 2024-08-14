@@ -20,10 +20,159 @@
 
 /* xl */
 @media (min-width: 1281px) and (max-width: 1536px) {
+    :host {
+        display: block;
+        background-color: white;
+        border-top: 0.8px solid lightgray;
+        transform: translateY(168px);
+        width: 100vw;
+        height: 292px;
+    }
 
+    img#iyzico-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 13px;
+        color: gray;
+    }
+
+    button.country {
+        width: 142px;
+        height: 42px;
+        margin: 10px 0px 10px 0px;
+        color: #121212;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid #121212;
+        font-size: 13px;
+        cursor: pointer;
+        transition: outline 0.5s;
+    }
+    
+    button.country:hover {
+        outline: 1px solid #121212;
+    }
+
+    div.description {
+        font-size: 12px;
+        font-weight: 400;
+        color: gray;
+        /* background-color: blue; */
+        height: 35px;
+        display: flex;
+        align-items: center;
+        margin: 0px 160px 0px 160px;
+        padding: 0px 50px 0px 50px;
+    }
+
+    div.footer-container {
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0px 160px 0px 160px;
+        padding: 0px 50px 0px 50px;
+        margin-top: 118px;
+        margin-bottom: 24px;
+    }
+
+    div.footer-left {
+        /* background-color: red; */
+        height: 100%;
+        width: 50%;
+    }
+
+    div.footer-right {
+        /* background-color: green; */
+        height: 78px;
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* 2xl */
 @media (min-width: 1537px){
+    :host {
+        display: block;
+        background-color: white;
+        border-top: 0.8px solid lightgray;
+        transform: translateY(168px);
+        width: 100vw;
+        height: 292px;
+    }
 
+    img#iyzico-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 13px;
+        color: gray;
+    }
+
+    button.country {
+        width: 142px;
+        height: 42px;
+        margin: 10px 0px 10px 0px;
+        color: #121212;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid #121212;
+        font-size: 13px;
+        cursor: pointer;
+        transition: outline 0.5s;
+    }
+    
+    button.country:hover {
+        outline: 1px solid #121212;
+    }
+
+    div.description {
+        font-size: 12px;
+        font-weight: 400;
+        color: gray;
+        width: 1200px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        margin-left: calc((100vw - 1200px) / 2);
+        margin-right: calc((100vw - 1200px) / 2);
+        padding: 0px 50px 0px 50px;
+    }
+
+    div.footer-container {
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0px 160px 0px 160px;
+        padding: 0px 50px 0px 50px;
+        margin-top: 118px;
+        margin-bottom: 24px;
+    }
+
+    div.footer-left {
+        /* background-color: red; */
+        height: 100%;
+        width: 550px;
+    }
+
+    div.footer-right {
+        /* background-color: green; */
+        height: 78px;
+        display: flex;
+        width: 550px;
+        justify-content: center;
+        align-items: center;
+    }
 }

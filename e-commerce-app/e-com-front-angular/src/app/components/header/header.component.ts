@@ -15,11 +15,10 @@ export class HeaderComponent {
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event): void {
     let scrollYOffset: number = window.scrollY;
-    if(this.lastScrollTop < scrollYOffset){
-      this.isHidden = true;
-    }
-    else {
+    if (scrollYOffset <= this.lastScrollTop) {
       this.isHidden = false;
+    } else {
+      this.isHidden = true;
     }
     this.lastScrollTop = scrollYOffset;
   }
