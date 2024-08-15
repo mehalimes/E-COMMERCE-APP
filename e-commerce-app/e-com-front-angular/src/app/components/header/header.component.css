@@ -1,10 +1,95 @@
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
+    div.header {
+        width: calc(100vw);
+        margin-left: 0;
+        position: fixed;
+        height: 160px;
+        padding: 36px 50px 12px 50px;
+        background-color: white;
+        transition: transform 0.3s;
+        z-index: 10;
+    }
+
+    .hidden {
+        transform: translateY(-160px);
+        visibility: hidden;
+    }
+
+    img#logo {
+        width: 145px;
+        height: 112.5px;
+        padding: 7.5px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    svg#magnifying-glass-icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);    
+    }
+
+    svg#cart-icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 /* Mobile M */
 @media (min-width: 375px) and (max-width: 424px) {
+    div.header {
+        width: calc(100vw);
+        margin-left: 0;
+        position: fixed;
+        height: 160px;
+        padding: 36px 50px 12px 50px;
+        background-color: white;
+        transition: transform 0.3s;
+        z-index: 10;
+    }
 
+    .hidden {
+        transform: translateY(-160px);
+        visibility: hidden;
+    }
+
+    img#logo {
+        width: 145px;
+        height: 112.5px;
+        padding: 7.5px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    svg#magnifying-glass-icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);    
+    }
+
+    svg#cart-icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 /* Mobile L */
@@ -104,8 +189,8 @@
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px) {
     div.header {
-        width: calc(100vw - 320px);
-        margin-left: 160px;
+        width: 80vw;
+        margin-left: 10vw;
         position: fixed;
         height: 160px;
         padding: 36px 50px 12px 50px;
@@ -159,6 +244,7 @@
         background-color: white;
         transition: transform 0.3s;
         z-index: 10;
+        max-width: 1497px;
     }
 
     .hidden {

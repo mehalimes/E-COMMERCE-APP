@@ -1,24 +1,12 @@
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
-
-}
-
-/* Mobile M */
-@media (min-width: 375px) and (max-width: 424px) {
-
-}
-
-/* Mobile L */
-@media (min-width: 425px) and (max-width: 767px) {
     :host {
         display: block;
-        width: 700px;
+        width: 100vw;
         height: auto;
         max-height: 2385px;
         padding-left: 20px;
-        padding-right: 10px;
         transform: translateY(160px);
-        margin-left: 0px;
         overflow-y: hidden;
     }
 
@@ -27,22 +15,55 @@
     }
 }
 
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 424px) {
     :host {
         display: block;
-        width: 700px;
+        width: 100vw;
         height: auto;
-        max-height: 1585px;
-        padding-left: 50px;
-        padding-right: 50px;
+        max-height: 2385px;
+        padding-left: 5%;
         transform: translateY(160px);
-        margin-left: calc((100vw - 635px) / 2);
         overflow-y: hidden;
     }
 
     :host > * {
-        margin: 3px;
+        margin: 2px;
+    }
+}
+
+/* Mobile L */
+@media (min-width: 425px) and (max-width: 767px) {
+    :host {
+        display: block;
+        width: 100vw;
+        height: auto;
+        max-height: 2385px;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        transform: translateY(160px);
+        overflow-y: hidden;
+    }
+
+    :host > * {
+        margin-left: 1vw;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    :host {
+        width: 100vw;
+        height: auto;
+        transform: translateY(160px);
+        overflow-y: hidden;
+        display: block;
+        padding-left: 16%;
+    }
+
+    :host > * {
+        margin: 5px;
+        display: inline-block;
     }
 }
 
@@ -50,18 +71,16 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
     :host {
         display: block;
-        width: 950px;
+        width: 100vw;
         height: auto;
-        max-height: 1585px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 9vw;
+        /* padding-right: 7vw; */
         transform: translateY(160px);
-        margin-left: calc((100vw - 900px) / 2);
         overflow-y: hidden;
     }
 
     :host > * {
-        margin: 5px;
+        margin: 1vw;
     }
 }
 

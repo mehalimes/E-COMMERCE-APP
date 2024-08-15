@@ -1,11 +1,155 @@
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
+    :host {
+        display: block;
+        background-color: white;
+        border-top: 0.8px solid lightgray;
+        transform: translateY(178px);
+        width: 100vw;
+        height: 252px;
+    }
+
+    img#iyzico-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 13px;
+        color: gray;
+        transform: translateX(-22px);
+    }
+
+    button.country {
+        width: 142px;
+        height: 42px;
+        margin: 10px 0px 10px 0px;
+        color: #121212;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid #121212;
+        font-size: 13px;
+        cursor: pointer;
+        transition: outline 0.5s;
+    }
     
+    button.country:hover {
+        outline: 1px solid #121212;
+    }
+
+    div.description {
+        font-size: 12px;
+        font-weight: 400;
+        color: gray;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    div.footer-left {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.footer-right {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }    
 }
 
 /* Mobile M */
 @media (min-width: 375px) and (max-width: 424px) {
+    :host {
+        display: block;
+        background-color: white;
+        border-top: 0.8px solid lightgray;
+        transform: translateY(178px);
+        width: 100vw;
+        height: 252px;
+    }
 
+    img#iyzico-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 13px;
+        color: gray;
+        transform: translateX(-22px);
+    }
+
+    button.country {
+        width: 142px;
+        height: 42px;
+        margin: 10px 0px 10px 0px;
+        color: #121212;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid #121212;
+        font-size: 13px;
+        cursor: pointer;
+        transition: outline 0.5s;
+    }
+    
+    button.country:hover {
+        outline: 1px solid #121212;
+    }
+
+    div.description {
+        font-size: 12px;
+        font-weight: 400;
+        color: gray;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    div.footer-left {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.footer-right {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Mobile L */
@@ -14,7 +158,7 @@
         display: block;
         background-color: white;
         border-top: 0.8px solid lightgray;
-        transform: translateY(168px);
+        transform: translateY(178px);
         width: 100vw;
         height: 252px;
     }
