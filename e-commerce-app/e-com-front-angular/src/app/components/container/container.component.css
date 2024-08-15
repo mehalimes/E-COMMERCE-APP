@@ -1,25 +1,72 @@
-/* xs */
-@media (max-width: 576px){
+/* Mobile S */
+@media (min-width: 320px) and (max-width: 374px) {
 
 }
 
-/* sm */
-@media (min-width: 577px) and (min-width: 768px) {
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 424px) {
 
 }
 
-/* md */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* Mobile L */
+@media (min-width: 425px) and (max-width: 767px) {
+    :host {
+        display: block;
+        width: 700px;
+        height: auto;
+        max-height: 2385px;
+        padding-left: 20px;
+        padding-right: 10px;
+        transform: translateY(160px);
+        margin-left: 0px;
+        overflow-y: hidden;
+    }
 
+    :host > * {
+        margin: 2px;
+    }
 }
 
-/* lg */
-@media (min-width: 1025px) and (max-width: 1280px) {
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    :host {
+        display: block;
+        width: 700px;
+        height: auto;
+        max-height: 1585px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transform: translateY(160px);
+        margin-left: calc((100vw - 635px) / 2);
+        overflow-y: hidden;
+    }
 
+    :host > * {
+        margin: 3px;
+    }
 }
 
-/* xl */
-@media (min-width: 1281px) and (max-width: 1536px) {
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    :host {
+        display: block;
+        width: 950px;
+        height: auto;
+        max-height: 1585px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transform: translateY(160px);
+        margin-left: calc((100vw - 900px) / 2);
+        overflow-y: hidden;
+    }
+
+    :host > * {
+        margin: 5px;
+    }
+}
+
+/* Laptop L */
+@media (min-width: 1440px) and (max-width: 2559px) {
     :host {
         display: block;
         width: 1200px;
@@ -37,8 +84,8 @@
     }
 }
 
-/* 2xl */
-@media (min-width: 1537px){
+/* 4K */
+@media (min-width: 2560px) {
     :host {
         display: block;
         width: 1200px;
