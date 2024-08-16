@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { ProductPageContainerComponent } from './components/product-page-container/product-page-container.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ProductPageContainerComponent } from './components/product-page-contain
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HeaderComponent
   ],
   providers: [
