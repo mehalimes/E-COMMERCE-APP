@@ -5,7 +5,7 @@
         width: 100vw;
         height: auto;
         max-height: 2385px;
-        padding-left: 20px;
+        padding-left: 10vw;
         transform: translateY(160px);
         overflow-y: hidden;
     }
@@ -22,7 +22,7 @@
         width: 100vw;
         height: auto;
         max-height: 2385px;
-        padding-left: 5%;
+        padding-left: 10vw;
         transform: translateY(160px);
         overflow-y: hidden;
     }
@@ -39,14 +39,13 @@
         width: 100vw;
         height: auto;
         max-height: 2385px;
-        padding-left: 3vw;
-        padding-right: 3vw;
+        padding-left: 10vw;
         transform: translateY(160px);
         overflow-y: hidden;
     }
 
     :host > * {
-        margin-left: 1vw;
+        margin-left: 2px;
     }
 }
 
@@ -58,12 +57,11 @@
         transform: translateY(160px);
         overflow-y: hidden;
         display: block;
-        padding-left: 16%;
+        padding-left: 10vw;
     }
 
     :host > * {
-        margin: 5px;
-        display: inline-block;
+        margin: 2px;
     }
 }
 
@@ -73,14 +71,13 @@
         display: block;
         width: 100vw;
         height: auto;
-        padding-left: 9vw;
-        /* padding-right: 7vw; */
+        padding-left: 10vw;
         transform: translateY(160px);
         overflow-y: hidden;
     }
 
     :host > * {
-        margin: 1vw;
+        margin: 2px;
     }
 }
 
@@ -90,16 +87,13 @@
         display: block;
         width: 1200px;
         height: auto;
-        max-height: 1585px;
-        padding-left: 50px;
-        padding-right: 50px;
         transform: translateY(160px);
         margin-left: calc((100vw - 1200px) / 2);
         overflow-y: hidden;
     }
 
     :host > * {
-        margin: 5px;
+        margin: 2px;
     }
 }
 

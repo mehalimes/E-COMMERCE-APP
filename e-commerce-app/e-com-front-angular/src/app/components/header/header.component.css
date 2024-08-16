@@ -236,8 +236,8 @@
 /* Laptop L */
 @media (min-width: 1440px) and (max-width: 2559px) {
     div.header {
-        width: calc(100vw - 320px);
-        margin-left: 160px;
+        width: 1200px;
+        margin-left: calc((100vw - 1200px) / 2);
         position: fixed;
         height: 160px;
         padding: 36px 50px 12px 50px;

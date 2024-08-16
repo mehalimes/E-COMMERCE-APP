@@ -1,7 +1,7 @@
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
     div.product-card {
-        width: 141px;
+        width: calc(40vw - 4px);
         height: 260px;
     }
 
@@ -10,22 +10,18 @@
         text-underline-offset: 3px;
     }
 
-    div.product-card:hover div.product-image {
-        background-size: 105%;
-    }
-
     div.product-image {
-        height: 141px;
-        width: 141px;
+        height: 124px;
+        width: calc(40vw - 4px);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         border-radius: 15px;
         position: relative;
     }
 
     div.product-name {
-        width: 141px;
+        width: calc(40vw - 4px);
         height: 62px;
         padding-top: 17px;
         margin-bottom: 20px;
@@ -43,7 +39,7 @@
 
     :host {
         display: inline-block;
-        width: 141px;
+        width: calc(40vw - 4px);
         height: 260px;
     }
 
@@ -67,7 +63,7 @@
 /* Mobile M */
 @media (min-width: 375px) and (max-width: 424px) {
     div.product-card {
-        width: 168px;
+        width: calc(40vw - 4px);
         height: 288px;
     }
 
@@ -76,22 +72,18 @@
         text-underline-offset: 3px;
     }
 
-    div.product-card:hover div.product-image {
-        background-size: 105%;
-    }
-
     div.product-image {
         height: 168px;
-        width: 168px;
+        width: calc(40vw - 4px);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         border-radius: 15px;
         position: relative;
     }
 
     div.product-name {
-        width: 168px;
+        width: calc(40vw - 4px);
         height: 62px;
         padding-top: 17px;
         margin-bottom: 20px;
@@ -109,7 +101,7 @@
 
     :host {
         display: inline-block;
-        width: 168px;
+        width: calc(40vw - 4px);
         height: 288px;
     }
 
@@ -133,7 +125,7 @@
 /* Mobile L */
 @media (min-width: 425px) and (max-width: 767px) {
     div.product-card {
-        width: 193px;
+        width: calc(40vw - 4px);
         height: 297px;
     }
 
@@ -142,22 +134,18 @@
         text-underline-offset: 3px;
     }
 
-    div.product-card:hover div.product-image {
-        background-size: 105%;
-    }
-
     div.product-image {
         height: 193px;
-        width: 193px;
+        width: calc(40vw - 4px);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         border-radius: 15px;
         position: relative;
     }
 
     div.product-name {
-        width: 193px;
+        width: calc(40vw - 4px);
         height: 46px;
         padding-top: 17px;
         margin-bottom: 20px;
@@ -175,7 +163,7 @@
 
     :host {
         display: inline-block;
-        width: 193px;
+        width: calc(40vw - 4px);
         height: 297px;
     }
 
@@ -199,7 +187,7 @@
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     div.product-card {
-        width: 263px;
+        width: calc(40vw - 4px);
         height: 378px;
     }
 
@@ -208,22 +196,18 @@
         text-underline-offset: 3px;
     }
 
-    div.product-card:hover div.product-image {
-        background-size: 105%;
-    }
-
     div.product-image {
         height: 263px;
-        width: 263px;
+        width: calc(40vw - 4px);;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         border-radius: 15px;
         position: relative;
     }
 
     div.product-name {
-        width: 263px;
+        width: calc(40vw - 4px);
         height: auto;
         padding-top: 17px;
         margin-bottom: 20px;
@@ -241,7 +225,7 @@
 
     :host {
         display: inline-block;
-        width: 263px;
+        width: calc(40vw - 4px);
         height: 378px;
     }
 
@@ -265,7 +249,7 @@
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px) {
     div.product-card {
-        width: 263px;
+        width: calc(26.6vw - 4px);
         height: 378px;
     }
 
@@ -274,22 +258,18 @@
         text-underline-offset: 3px;
     }
 
-    div.product-card:hover div.product-image {
-        background-size: 105%;
-    }
-
     div.product-image {
         height: 263px;
-        width: 263px;
+        width: calc(26.6vw - 4px);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         border-radius: 15px;
         position: relative;
     }
 
     div.product-name {
-        width: 263px;
+        width: calc(26.6vw - 4px);
         height: auto;
         padding-top: 17px;
         margin-bottom: 20px;
@@ -307,7 +287,7 @@
 
     :host {
         display: inline-block;
-        width: 263px;
+        width: calc(26.6vw - 4px);
         height: 378px;
     }
 
@@ -331,7 +311,7 @@
 /* Laptop L */
 @media (min-width: 1440px) and (max-width: 2559px) {
     div.product-card {
-        width: 263px;
+        width: 296px;
         height: 378px;
     }
 
@@ -340,22 +320,18 @@
         text-underline-offset: 3px;
     }
 
-    div.product-card:hover div.product-image {
-        background-size: 105%;
-    }
-
     div.product-image {
-        height: 263px;
-        width: 263px;
+        height: 296px;
+        width: 296px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         border-radius: 15px;
         position: relative;
     }
 
     div.product-name {
-        width: 263px;
+        width: 296px;
         height: auto;
         padding-top: 17px;
         margin-bottom: 20px;
@@ -373,7 +349,7 @@
 
     :host {
         display: inline-block;
-        width: 263px;
+        width: 296px;
         height: 378px;
     }
 
@@ -406,16 +382,12 @@
         text-underline-offset: 3px;
     }
 
-    div.product-card:hover div.product-image {
-        background-size: 105%;
-    }
-
     div.product-image {
         height: 263px;
         width: 263px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         border-radius: 15px;
         position: relative;
     }
