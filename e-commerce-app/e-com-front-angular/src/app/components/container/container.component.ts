@@ -6,6 +6,8 @@ export interface Product {
   stockCount: number;
   productName: string;
   productPrice: number;
+  productId: number;
+  sizes: string[];
 }
 
 @Component({
@@ -21,7 +23,9 @@ export class ContainerComponent {
       productImage: product.productImage,
       stockCount: Number(product.stockCount),
       productName: product.productName,
-      productPrice: Number(product.productPrice)
+      productPrice: Number(product.productPrice),
+      sizes: product.sizes,
+      productId: product.productId
     }));
   }
 }

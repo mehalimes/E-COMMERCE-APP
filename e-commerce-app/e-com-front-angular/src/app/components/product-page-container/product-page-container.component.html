@@ -1,19 +1,22 @@
-<div class="left-container" [ngStyle]="{ 'background-image' : 'url(' + imageUrl + ')' }"></div>
+<div class="left-container" [ngStyle]="{ 'background-image' : 'url(' + this.currentProduct.productImage + ')' }"></div>
 <div class="right-container">
-    <h1>Is it Chai or Cha</h1>
-    <span>$18.00 CAD</span>
+    <h1>{{ this.currentProduct.productName }}</h1>
+    <span>₺{{ this.currentProduct.productPrice }} TRY</span>
     <label>Quantity</label>
     <div class="quantity-container">
-        <button (click)="decrement()" class="decrement-button">-</button>
+        <button #decrementButtonRef (click)="decrement()" class="decrement-button">-</button>
         <input #productQuantityRef [(ngModel)]="productQuantity" (focus)="productQuantityFocus()" (focusout)="productQuantityFocusOut()" (change)="productQuantityChange()"/>
         <button (click)="increment()" class="increment-button">+</button>
     </div>
-    <button (click)="addCart()" class="add-button">
-        <ng-container *ngIf="isAdded">Add to cart</ng-container>
-        <ng-container *ngIf="!isAdded">
-            <div class="spinner-border" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </ng-container>
-    </button>
+    <label *ngIf="this.currentProduct.sizes !== undefined">Size</label>
+    <div class="size-container" *ngIf="this.currentProduct.sizes !== undefined">
+        <select name="sizes" class="sizes" [(ngModel)]="this.productSize">
+            <option *ngFor="let size of this.currentProduct.sizes" [value]="size">{{ size }}</option>
+        </select>
+    </div>
+    <app-button [buttonEvent]="addCart" class="add-button"></app-button>
+        <!-- <ng-container *ngIf="isLoading">Add to cart</ng-container>
+        <ng-container *ngIf="!isLoading">
+            <div class="spinner-border" role="status"></div>
+        </ng-container> BURADA KALDIK -->
 </div>

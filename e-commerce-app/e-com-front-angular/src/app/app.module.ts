@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { ProductPageContainerComponent } from './components/product-page-container/product-page-container.component';
 import { FormsModule } from '@angular/forms';
+import { PopUpComponent } from './components/pop-up/pop-up.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     ProductPageComponent,
-    ProductPageContainerComponent
+    ProductPageContainerComponent,
+    PopUpComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

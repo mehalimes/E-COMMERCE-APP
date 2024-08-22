@@ -1,4 +1,4 @@
-<div class="product-card">
+<div class="product-card" (click)="navigateToProduct(this.productId)">
     <div class="product-image" [ngStyle]="{ 'background-image' : 'url(' + productImage + ')' }">
         <div *ngIf="stockCount === 0" class="stock-status">Sold out</div>
     </div>

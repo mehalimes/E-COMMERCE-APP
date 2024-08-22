@@ -6,7 +6,7 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 const routes: Routes = [
   { path: "", redirectTo: '/home', pathMatch: 'full' },
   { path: "home", component: HomeComponent },
-  { path: "product-page", component: ProductPageComponent },
+  { path: "product-page/:productId", component: ProductPageComponent },
 ];
 
 @NgModule({

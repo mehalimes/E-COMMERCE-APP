@@ -235,7 +235,7 @@
         display: block;
         background-color: white;
         border-top: 0.8px solid lightgray;
-        transform: translateY(168px);
+        transform: translateY(238px);
         width: 100vw;
         height: 292px;
     }
@@ -393,7 +393,7 @@
         display: block;
         background-color: white;
         border-top: 0.8px solid lightgray;
-        transform: translateY(168px);
+        transform: translateY(208px);
         width: 100vw;
         height: 292px;
     }

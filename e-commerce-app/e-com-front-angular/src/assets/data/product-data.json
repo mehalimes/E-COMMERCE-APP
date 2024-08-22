@@ -1,79 +1,87 @@
 [
     {
+        "productId" : "1",
         "productImage" : "./../../../assets/images/bag.webp",
-        "stockCount": "10",
         "productName" : "Whoever can correctly guess what dish I'm making will get a bajillion points",
         "productPrice" : "20"
     },
     {
+        "productId" : "2",
         "productImage" : "./../../../assets/images/beanie.webp",
-        "stockCount": "10",
         "productName" : "Kulfi Mind",
         "productPrice" : "26.5"
     },
     {
+        "productId" : "3",
         "productImage" : "./../../../assets/images/cap.webp",
-        "stockCount": "10",
         "productName" : "WHAT ARE YOU? (big brain)",
         "productPrice" : "29.5"
     },
     {
+        "productId" : "4",
         "productImage" : "./../../../assets/images/cookbook.webp",
-        "stockCount": "0",
         "productName" : "COOKBOOK: Beyond Measure - Pakistani Cooking by Feel with GoldenGully",
         "productPrice" : "42"
     },
     {
+        "productId" : "5",
         "productImage" : "./../../../assets/images/hoodie.webp",
-        "stockCount": "10",
+        "sizes" : ["S", "M", "L", "XL"],
         "productName" : "It's Cold Outside",
         "productPrice" : "41"
     },
     {
+        "productId" : "6",
         "productImage" : "./../../../assets/images/mug.webp",
-        "stockCount": "10",
         "productName" : "Is it Chai or Cha",
         "productPrice" : "18"
     },
     {
+        "productId" : "7",
         "productImage" : "./../../../assets/images/sweat.webp",
-        "stockCount": "10",
+        "sizes" : ["S", "M", "L", "XL"],
         "productName" : "WHAT ARE YOU?",
         "productPrice" : "19"
     },
     {
+        "productId" : "8",
         "productImage" : "./../../../assets/images/tshirt1.webp",
-        "stockCount": "10",
+        "sizes" : ["S", "M", "L", "XL"],
         "productName" : "Kulfi In My Heart",
         "productPrice" : "28"
     },
     {
+        "productId" : "9",
         "productImage" : "./../../../assets/images/tshirt2.jpg",
-        "stockCount": "10",
+        "sizes" : ["S", "M", "L", "XL"],
         "productName" : "What are Saturdays?",
         "productPrice" : "19"
     },
     {
+        "productId" : "10",
         "productImage" : "./../../../assets/images/tshirt3.webp",
-        "stockCount": "10",
+        "sizes" : ["S", "M", "L", "XL"],
         "productName" : "What's KULFI",
         "productPrice" : "19"
     },
     {
+        "productId" : "11",
         "productImage" : "./../../../assets/images/tshirt4.webp",
-        "stockCount": "10",
+        "sizes" : ["S", "M", "L", "XL"],
         "productName" : "What's KULFI (hide ya skin)",
         "productPrice" : "34.5"
     },
     {
+        "productId" : "12",
         "productImage" : "./../../../assets/images/tshirt5.jpg",
-        "stockCount": "10",
+        "sizes" : ["S", "M", "L", "XL"],
         "productName" : "WHAT ARE YOU? (hide ya skin)",
         "productPrice" : "34.5"
     },
     {
+        "productId" : "13",
         "productImage" : "./../../../assets/images/tshirt6.webp",
-        "stockCount": "10",
+        "sizes" : ["S", "M", "L", "XL"],
         "productName" : "What are Saturdays? (hide ya skin)",
         "productPrice" : "34.5"
     }

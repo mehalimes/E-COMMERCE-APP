@@ -1,21 +1,666 @@
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(160px);
+        margin-bottom: 50px;
+    }
+
+    div.left-container {
+        width: 80vw;
+        height: 80vw;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    div.right-container {
+        width: 80vw;
+        height: auto;
+        background-color: white;
+        padding-left: 10px;
+    }
+
+    h1 {
+        margin-top: 16px;
+        margin-bottom: 26px;
+        font-size: 24.87px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    span {
+        display: block;
+        width: 240px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    
+    button.decrement-button, button.increment-button {
+        width: 47px;
+        height: 47px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    button.decrement-button {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    button.increment-button {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    button.add-button {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 50px;
+        height: 47px;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: white;
+    }
+
+    label {
+        font-size: 15px;
+        color: #121212bf;
+        letter-spacing: 0.75px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    div.quantity-container {
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        width: fit-content;
+        border-radius: 4px;
+        margin-bottom: 26px;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+    }
+
+    select.sizes {
+        width: 150px;
+        height: 50px;
+        padding-left: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 4px;
+        appearance: none;
+    }
+
+    div.size-container {
+        position: relative;
+        width: 150px;
+        margin-bottom: 26px;
+    }
+
+    div.size-container::after {
+        content: "▾";
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
 }
 
 /* Mobile M */
 @media (min-width: 375px) and (max-width: 424px) {
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(160px);
+        margin-bottom: 50px;
+    }
+
+    div.left-container {
+        width: 80vw;
+        height: 80vw;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    div.right-container {
+        width: 80vw;
+        height: auto;
+        background-color: white;
+        padding-left: 15px;
+    }
+
+    h1 {
+        margin-top: 16px;
+        margin-bottom: 26px;
+        font-size: 24.87px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    span {
+        display: block;
+        width: 240px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    
+    button.decrement-button, button.increment-button {
+        width: 47px;
+        height: 47px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    button.decrement-button {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    button.increment-button {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    button.add-button {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 50px;
+        height: 47px;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: white;
+    }
+
+    label {
+        font-size: 15px;
+        color: #121212bf;
+        letter-spacing: 0.75px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    div.quantity-container {
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        width: fit-content;
+        border-radius: 4px;
+        margin-bottom: 26px;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+    }
+
+    select.sizes {
+        width: 150px;
+        height: 50px;
+        padding-left: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 4px;
+        appearance: none;
+    }
+
+    div.size-container {
+        position: relative;
+        width: 150px;
+        margin-bottom: 26px;
+    }
+
+    div.size-container::after {
+        content: "▾";
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
 }
 
 /* Mobile L */
 @media (min-width: 425px) and (max-width: 767px) {
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(160px);
+        margin-bottom: 50px;
+    }
+
+    div.left-container {
+        width: 80vw;
+        height: 80vw;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    div.right-container {
+        width: 80vw;
+        height: auto;
+        background-color: white;
+        padding-left: 40px;
+    }
+
+    h1 {
+        margin-top: 16px;
+        margin-bottom: 26px;
+        font-size: 24.87px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    span {
+        display: block;
+        width: 240px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    
+    button.decrement-button, button.increment-button {
+        width: 47px;
+        height: 47px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    button.decrement-button {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    button.increment-button {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    button.add-button {
+        width: 253px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 50px;
+        height: 47px;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: white;
+    }
+
+    label {
+        font-size: 15px;
+        color: #121212bf;
+        letter-spacing: 0.75px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    div.quantity-container {
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        width: fit-content;
+        border-radius: 4px;
+        margin-bottom: 26px;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+    }
+
+    select.sizes {
+        width: 150px;
+        height: 50px;
+        padding-left: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 4px;
+        appearance: none;
+    }
+
+    div.size-container {
+        position: relative;
+        width: 150px;
+        margin-bottom: 26px;
+    }
+
+    div.size-container::after {
+        content: "▾";
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        transform: translateY(160px);
+        margin-bottom: 50px;
+    }
+
+    div.left-container {
+        width: 357px;
+        height: 357px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    div.right-container {
+        width: 192px;
+        height: 357px;
+        background-color: white;
+        padding-left: 40px;
+    }
+
+    h1 {
+        margin-top: 16px;
+        margin-bottom: 26px;
+        font-size: 19.9px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    span {
+        display: block;
+        width: 192px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    
+    button.decrement-button, button.increment-button {
+        width: 47px;
+        height: 47px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    button.decrement-button {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    button.increment-button {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    button.add-button {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 50px;
+        height: 47px;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: white;
+    }
+
+    label {
+        font-size: 15px;
+        color: #121212bf;
+        letter-spacing: 0.75px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    div.quantity-container {
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        width: fit-content;
+        border-radius: 4px;
+        margin-bottom: 26px;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+    }
+
+    select.sizes {
+        width: 150px;
+        height: 50px;
+        padding-left: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 4px;
+        appearance: none;
+    }
+
+    div.size-container {
+        position: relative;
+        width: 150px;
+        margin-bottom: 26px;
+    }
+
+    div.size-container::after {
+        content: "▾";
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
 }
 
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px) {
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        transform: translateY(160px);
+        margin-bottom: 50px;
+    }
+
+    div.left-container {
+        width: 476px;
+        height: 476px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    div.right-container {
+        width: 256px;
+        height: 476px;
+        background-color: white;
+        padding-left: 40px;
+    }
+
+    h1 {
+        margin-top: 16px;
+        margin-bottom: 26px;
+        font-size: 26.6px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    span {
+        display: block;
+        width: 256px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    
+    button.decrement-button, button.increment-button {
+        width: 47px;
+        height: 47px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    button.decrement-button {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    button.increment-button {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    button.add-button {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 50px;
+        height: 47px;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: white;
+    }
+
+    label {
+        font-size: 15px;
+        color: #121212bf;
+        letter-spacing: 0.75px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    div.quantity-container {
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        width: fit-content;
+        border-radius: 5.3px;
+        margin-bottom: 26px;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+    }
+
+    select.sizes {
+        width: 150px;
+        height: 50px;
+        padding-left: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 4px;
+        appearance: none;
+    }
+
+    div.size-container {
+        position: relative;
+        width: 150px;
+        margin-bottom: 26px;
+    }
+
+    div.size-container::after {
+        content: "▾";
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
 }
 
 /* Laptop L */
@@ -55,7 +700,7 @@
     span {
         display: block;
         width: 385px;
-        font-size: 18px;
+        font-size: 20px;
         letter-spacing: 1px;
         margin-bottom: 30px;
     }
@@ -67,6 +712,7 @@
         outline: none;
         font-size: 18px;
         background-color: white;
+        cursor: pointer;
     }
 
     button.decrement-button {
@@ -85,8 +731,11 @@
         font-size: 17px;
         background-color: white;
         font-weight: 350;
-        border: 2px solid black;
+        border: 1.60px solid black;
         border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     input {
@@ -99,7 +748,7 @@
     }
 
     label {
-        font-size: 13px;
+        font-size: 15px;
         color: #121212bf;
         letter-spacing: 0.75px;
         margin-bottom: 20px;
@@ -115,8 +764,167 @@
         margin-bottom: 26px;
     }
 
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+    }
+
+    select.sizes {
+        width: 150px;
+        height: 50px;
+        padding-left: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 4px;
+        appearance: none;
+    }
+
+    div.size-container {
+        position: relative;
+        width: 150px;
+        margin-bottom: 26px;
+    }
+
+    div.size-container::after {
+        content: "▾";
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
 }
 
 /* 4K */
 @media (min-width: 2560px) {
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        transform: translateY(160px);
+        margin-bottom: 50px;
+    }
+
+    div.left-container {
+        width: 715px;
+        height: 715px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    div.right-container {
+        width: 385px;
+        height: 715px;
+        background-color: white;
+        padding-left: 40px;
+    }
+
+    h1 {
+        margin-top: 16px;
+        margin-bottom: 26px;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    span {
+        display: block;
+        width: 385px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    
+    button.decrement-button, button.increment-button {
+        width: 47px;
+        height: 47px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    button.decrement-button {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    button.increment-button {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    button.add-button {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 50px;
+        height: 47px;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: white;
+    }
+
+    label {
+        font-size: 15px;
+        color: #121212bf;
+        letter-spacing: 0.75px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    div.quantity-container {
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        width: fit-content;
+        border-radius: 8px;
+        margin-bottom: 26px;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+    }
+
+    select.sizes {
+        width: 150px;
+        height: 50px;
+        padding-left: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 4px;
+        appearance: none;
+    }
+
+    div.size-container {
+        position: relative;
+        width: 150px;
+        margin-bottom: 26px;
+    }
+
+    div.size-container::after {
+        content: "▾";
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
 }
