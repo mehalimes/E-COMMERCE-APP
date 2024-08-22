@@ -14,9 +14,10 @@
             <option *ngFor="let size of this.currentProduct.sizes" [value]="size">{{ size }}</option>
         </select>
     </div>
-    <app-button [buttonEvent]="addCart" class="add-button"></app-button>
-        <!-- <ng-container *ngIf="isLoading">Add to cart</ng-container>
-        <ng-container *ngIf="!isLoading">
-            <div class="spinner-border" role="status"></div>
-        </ng-container> BURADA KALDIK -->
+    <app-button 
+        [buttonEventProp]="addCart" 
+        class="add-button"
+        [buttonNameProp]="'Add to cart'"
+    >
+    </app-button>
 </div>

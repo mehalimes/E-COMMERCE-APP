@@ -1,0 +1,23 @@
+<label>
+    <img src="./../../../assets/images/check.svg"/>
+    Item added to your cart
+</label>
+<img src="./../../../assets/images/xmark.svg"/>
+<div class="row">
+    <img src="./../../../assets/images/bag.webp"/>
+    <div class="col">
+        <label>Kulfi In My Heart</label>
+        <label>Size : S</label>
+    </div>
+</div>
+<app-button
+    [buttonNameProp]="'View cart (5)'"
+    [buttonEventProp]="viewCartEvent"
+    [styleProp]=""
+></app-button>
+<app-button
+    [buttonNameProp]="'Check out'"
+    [buttonEventProp]="checkOutEvent"
+>
+</app-button>
+<a routerLink="/home">Continue shopping</a>

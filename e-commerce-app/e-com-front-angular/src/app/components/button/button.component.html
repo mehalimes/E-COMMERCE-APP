@@ -1,1 +1,13 @@
-<button class="button-component" (click)="buttonEvent()"></button>
+<button 
+    class="button-component" 
+    (click)="onClick()"
+    [ngStyle]="this.styleProp"
+    [disabled]="this.isLoading"
+>
+    <ng-container *ngIf="this.isLoading === true">
+        <div class="spinner-border" role="status"></div>
+    </ng-container>
+    <ng-container *ngIf="this.isLoading === false">
+        {{ this.buttonNameProp }}
+    </ng-container>
+</button>

@@ -1,0 +1,160 @@
+/* Mobile S */
+@media (min-width: 320px) and (max-width: 374px) {
+    button.button-component {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        color: black;
+    }
+}
+
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 424px) {
+    button.button-component {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        color: black;
+    }
+}
+
+/* Mobile L */
+@media (min-width: 425px) and (max-width: 767px) {
+    button.button-component {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        color: black;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    button.button-component {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        color: black;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    button.button-component {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        color: black;
+    }
+}
+
+/* Laptop L */
+@media (min-width: 1440px) and (max-width: 2559px) {
+    button.button-component {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        color: black;
+    }
+}
+
+/* 4K */
+@media (min-width: 2560px) {
+    button.button-component {
+        width: 343px;
+        height: 45px;
+        font-size: 17px;
+        background-color: white;
+        font-weight: 350;
+        border: 1.60px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.spinner-border {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        color: black;
+    }
+}

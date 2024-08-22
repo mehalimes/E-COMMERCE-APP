@@ -71,7 +71,12 @@ export class ProductPageContainerComponent implements OnInit {
     }
   }
 
-  public addCart(): void {
-    console.log("Helllo");
+  public async addCart(): Promise<void> {
+    await new Promise<void>((resolve, reject) => {
+      setTimeout(() => {
+        console.log("Hello");
+        resolve();
+      }, 3 * 1000);
+    })
   }
 }
