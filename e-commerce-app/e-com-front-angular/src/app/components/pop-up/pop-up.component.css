@@ -1,0 +1,80 @@
+/* Mobile S */
+@media (min-width: 320px) and (max-width: 374px) {
+}
+
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 424px) {
+}
+
+/* Mobile L */
+@media (min-width: 425px) and (max-width: 767px) {
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
+/* Laptop L */
+@media (min-width: 1440px) and (max-width: 2559px) {
+    :host {
+        display: block;
+        width: 458px;
+        height: 434px;
+        background-color: red;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 20;
+    }
+
+    img.xmark {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    img.check {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    img.product-photo {
+        height: 78px;
+        width: auto;
+        padding: 0;
+    }
+
+    label.header-label {
+        margin-top: 26px;
+        margin-left: 46px;
+        margin-bottom: 15px;
+        background-color: blueviolet;
+    }
+
+    div.row {
+        background-color: yellow;
+        width: 100%; 
+        margin-left: 10%;
+    }
+
+    div.col {
+        padding: 0;
+    }
+
+    div.col > label {
+        margin-left: 10px;
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+/* 4K */
+@media (min-width: 2560px) {
+}
