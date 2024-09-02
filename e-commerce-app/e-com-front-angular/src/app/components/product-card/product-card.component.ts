@@ -14,7 +14,10 @@ export class ProductCardComponent {
   @Input() productId: number;
   @Input() sizes: string[];
 
-  constructor(private router : Router){
+  constructor(
+    private router : Router
+  )
+  {
 
   }
 

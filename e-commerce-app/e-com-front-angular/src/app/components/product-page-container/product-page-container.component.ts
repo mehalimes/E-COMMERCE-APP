@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import Products from "./../../../assets/data/product-data.json";
+import Products from './../../../assets/data/product-data.json';
 import { Product } from '../container/container.component';
 
 @Component({
@@ -9,40 +9,48 @@ import { Product } from '../container/container.component';
   styleUrl: './product-page-container.component.css',
 })
 export class ProductPageContainerComponent implements OnInit {
-  public Products : Product[] = Products;
+  Products: Product[] = Products;
 
-  public productId : number;
-  public currentProduct : Product;
-  public productSize: string = 'S';
+  productId: number;
+  currentProduct: Product;
+  productSize: string = 'S';
+  productQuantity: number = 1;
 
-  public productQuantity: number = 1;
+  isPopUpHidden: boolean = false;
+
+  clickListener: () => void;
+
   @ViewChild('productQuantityRef') input: ElementRef;
-  @ViewChild('decrementButtonRef') decrementButton : ElementRef;
+  @ViewChild('decrementButtonRef') decrementButton: ElementRef;
+  @ViewChild('addCartButton') addCartButton: ElementRef;
 
-  constructor(private route : ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute
+  ) 
+  {
 
   }
 
-  public ngOnInit(){
+  ngOnInit() {
     this.productId = Number(this.route.snapshot.paramMap.get('productId'));
-    this.Products.forEach((item, index, array) => {
-      if(Number(item.productId) === this.productId){
+    this.Products.forEach((item) => {
+      if (Number(item.productId) === this.productId) {
         this.currentProduct = item;
         console.log(this.currentProduct);
       }
     });
   }
 
-  private isPositiveNumber(num: number): boolean {
+  isPositiveNumber(num: number): boolean {
     return !Number.isNaN(num) && Number(num) > 0;
   }
 
-  public increment(): void {
+  increment(): void {
     this.decrementButton.nativeElement.style.cursor = 'pointer';
     this.productQuantity += 1;
   }
 
-  public decrement(): void {
+  decrement(): void {
     if (this.productQuantity === 1) {
       this.decrementButton.nativeElement.style.cursor = 'not-allowed';
       return;
@@ -50,20 +58,20 @@ export class ProductPageContainerComponent implements OnInit {
     this.productQuantity -= 1;
   }
 
-  public productQuantityFocus(): void {
+  productQuantityFocus(): void {
     this.input.nativeElement.style.transform = 'scale(1.3)';
     this.input.nativeElement.style.border = '2px solid gray';
     this.input.nativeElement.style.color = 'black';
     this.input.nativeElement.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
   }
 
-  public productQuantityFocusOut(): void {
+  productQuantityFocusOut(): void {
     this.input.nativeElement.style.transform = 'scale(1)';
     this.input.nativeElement.style.border = 'none';
     this.input.nativeElement.style.color = 'black';
   }
 
-  public productQuantityChange(): void {
+  productQuantityChange(): void {
     if (this.isPositiveNumber(this.productQuantity)) {
       this.productQuantity = Number(this.productQuantity);
     } else {
@@ -71,12 +79,7 @@ export class ProductPageContainerComponent implements OnInit {
     }
   }
 
-  public async addCart(): Promise<void> {
-    await new Promise<void>((resolve, reject) => {
-      setTimeout(() => {
-        console.log("Hello");
-        resolve();
-      }, 3 * 1000);
-    })
+  async addCart(): Promise<void> {
+
   }
 }

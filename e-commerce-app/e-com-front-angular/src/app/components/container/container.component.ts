@@ -16,7 +16,7 @@ export interface Product {
   styleUrl: './container.component.css',
 })
 export class ContainerComponent {
-  public Products: Product[] = Products;
+  Products: Product[] = Products;
   
   ngOnInit(): void {
     this.Products = Products.map((product:any) => ({

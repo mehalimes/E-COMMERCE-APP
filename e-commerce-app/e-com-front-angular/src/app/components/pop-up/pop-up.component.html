@@ -1,24 +1,33 @@
-<label class="header-label">
-    <img class="check" src="./../../../assets/images/check.svg"/>
-    Item added to your cart
-</label>
-<img class="xmark" src="./../../../assets/images/xmark.svg"/>
-<div class="row">
-    <img class="product-photo" src="./../../../assets/images/bag.webp"/>
-    <div class="col">
-        <label>Kulfi In My Heart</label>
-        <label>Size : S</label>
-    </div>
-</div>
-<app-button
-    [buttonNameProp]="'View cart (5)'"
-    [buttonEventProp]="viewCartEvent"
-    [styleProp]="{ 'width' : '371px', 'margin-left' : '10%', 'margin-top' : '45px' }"
-></app-button>
-<app-button
-    [buttonNameProp]="'Check out'"
-    [buttonEventProp]="checkOutEvent"
-    [styleProp]="{ 'width' : '371px', 'margin-left' : '10%', 'margin-top' : '25px', 'background-color' : 'black', 'color':'white' }"
+<div 
+    #popUpContainer 
+    class="pop-up-container" 
+    [ngClass]="{ 'translate' : this.isHeaderHidden }"
+    *ngIf="!this.isPopUpHidden"
 >
-</app-button>
-<a routerLink="/home">Continue shopping</a>
+    <label class="header-label">
+        <img class="check" src="./../../../assets/images/check.svg"/>
+        Item added to your cart
+    </label>
+    <img class="xmark" src="./../../../assets/images/xmark.svg"/>
+    <div class="row">
+        <img class="product-photo" src="./../../../assets/images/bag.webp"/>
+        <div class="col">
+            <label>Kulfi In My Heart</label>
+            <label>Size : S</label>
+        </div>
+    </div>
+    <app-button
+        class="viewCart"
+        [buttonNameProp]="'View cart (5)'"
+        [buttonEventProp]="viewCartEvent"
+        [styleProp]="{ 'width' : '371px', 'margin-left' : '10%', 'margin-top' : '35px' }"
+    ></app-button>
+    <app-button
+        class="checkOut"
+        [buttonNameProp]="'Check out'"
+        [buttonEventProp]="checkOutEvent"
+        [styleProp]="{ 'width' : '371px', 'margin-left' : '10%', 'margin-top' : '15px', 'background-color' : 'black', 'color':'white' }"
+    >
+    </app-button>
+    <a routerLink="/home">Continue shopping</a>
+</div>

@@ -20,15 +20,16 @@
 
 /* Laptop L */
 @media (min-width: 1440px) and (max-width: 2559px) {
-    :host {
+    div.pop-up-container {
         display: block;
         width: 458px;
-        height: 434px;
-        background-color: red;
+        height: 384px;
+        background-color: white;
         position: fixed;
-        right: 0;
-        top: 0;
         z-index: 20;
+        border: 2px solid black;
+        right: 100px;
+        top: 160px;
     }
 
     img.xmark {
@@ -55,12 +56,12 @@
         margin-top: 26px;
         margin-left: 46px;
         margin-bottom: 15px;
-        background-color: blueviolet;
+        background-color: white;
     }
 
     div.row {
-        background-color: yellow;
-        width: 100%; 
+        background-color: white;
+        width: 80%; 
         margin-left: 10%;
     }
 
@@ -72,6 +73,21 @@
         margin-left: 10px;
         display: block;
         margin-top: 10px;
+    }
+
+    a {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        margin-top: 30px;
+        text-decoration: underline;
+        color: black;
+        text-underline-offset: 3px;
+    }
+
+    .translate {
+        transform: translateY(-155px);
     }
 }
 

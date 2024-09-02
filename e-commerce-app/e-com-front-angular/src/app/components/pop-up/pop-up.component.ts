@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,17 +6,34 @@ import { Router } from '@angular/router';
   templateUrl: './pop-up.component.html',
   styleUrl: './pop-up.component.css'
 })
-export class PopUpComponent {
+export class PopUpComponent implements OnInit, OnDestroy {
+  isHeaderHidden: boolean = false;
+  isPopUpHidden: boolean = false;
+  addCartButton: HTMLButtonElement;
 
-  constructor(private router : Router){
+  @ViewChild('popUpContainer') popUpContainer : ElementRef;
+
+  constructor(
+    private router : Router
+  )
+  {
 
   }
 
-  public async viewCartEvent() : Promise<void> { 
-    this.router.navigate(["/cart"]);
+  ngOnInit() {
+    
   }
 
-  public async checkOutEvent() : Promise<void> { 
-    this.router.navigate(["/payment-page"]);
+  ngOnDestroy() {
+
   }
+
+  async viewCartEvent() : Promise<void> { 
+    await this.router.navigate(["/cart"]);
+  }
+
+  async checkOutEvent() : Promise<void> { 
+    await this.router.navigate(["/payment-page"]);
+  }
+
 }

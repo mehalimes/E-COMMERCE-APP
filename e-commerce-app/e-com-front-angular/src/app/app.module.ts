@@ -12,6 +12,8 @@ import { ProductPageContainerComponent } from './components/product-page-contain
 import { FormsModule } from '@angular/forms';
 import { PopUpComponent } from './components/pop-up/pop-up.component';
 import { ButtonComponent } from './components/button/button.component';
+import { StoreModule } from '@ngrx/store';
+import { appReducer } from './store/app.reducers';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ButtonComponent } from './components/button/button.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HeaderComponent
+    HeaderComponent,
+    StoreModule.forRoot({ app: appReducer })
   ],
   providers: [
     provideClientHydration()
