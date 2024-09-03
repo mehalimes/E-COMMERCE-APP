@@ -49,8 +49,6 @@ export class PopUpComponent implements OnInit, OnDestroy, AfterViewInit {
     const clickedInside: boolean = this.popUpContainer?.nativeElement?.contains(event.target) ?? false;
     const addCartButtonClicked: boolean = (event.target as HTMLElement).classList.contains('add-button');
     
-    console.log("Clicked INside",clickedInside)
-    console.log("Add Cart Button Clicked",addCartButtonClicked);
     if(!this.isPopUpVisible && addCartButtonClicked){
       this.sharedStateService.setPopUpVisibleState(true);
     }

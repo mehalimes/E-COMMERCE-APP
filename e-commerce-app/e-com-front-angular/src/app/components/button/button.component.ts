@@ -11,6 +11,7 @@ export class ButtonComponent {
   @Input() buttonEventProp: () => void | Promise<void>;
   @Input() buttonNameProp: string;
   @Input() styleProp?: { [key : string] : string };
+  @Input() classProp?: string;
 
   isLoading: boolean = false;
 
