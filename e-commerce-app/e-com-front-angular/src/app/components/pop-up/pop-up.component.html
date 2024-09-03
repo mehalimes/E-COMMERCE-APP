@@ -1,8 +1,8 @@
 <div 
     #popUpContainer 
     class="pop-up-container" 
-    [ngClass]="{ 'translate' : this.isHeaderHidden }"
-    *ngIf="!this.isPopUpHidden"
+    [ngClass]="{ 'translate' : !this.isHeaderVisible }"
+    *ngIf="this.isPopUpVisible"
 >
     <label class="header-label">
         <img class="check" src="./../../../assets/images/check.svg"/>

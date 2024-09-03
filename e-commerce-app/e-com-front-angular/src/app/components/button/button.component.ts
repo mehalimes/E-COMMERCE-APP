@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { SharedStateService } from '../../services/shared-state.service';
 
 @Component({
   selector: 'app-button',
@@ -7,14 +8,14 @@ import { Store } from '@ngrx/store';
   styleUrl: './button.component.css'
 })
 export class ButtonComponent {
-  @Input() buttonEventProp: () => Promise<void> = () => Promise.resolve();
+  @Input() buttonEventProp: () => void | Promise<void>;
   @Input() buttonNameProp: string;
   @Input() styleProp?: { [key : string] : string };
 
   isLoading: boolean = false;
 
   constructor(
-    
+    private sharedStateService : SharedStateService
   )
   {
 

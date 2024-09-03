@@ -1,9 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Observable } from 'rxjs';
-import { AppState } from '../../store/app.state';
-import { Store } from '@ngrx/store';
-import { setField } from '../../store/app.actions';
+import { SharedStateService } from '../../services/shared-state.service';
 
 @Component({
   selector: 'app-header',
@@ -14,22 +11,18 @@ import { setField } from '../../store/app.actions';
 })
 export class HeaderComponent {
   lastScrollTop: number = 0;
-  isHeaderHidden: boolean = false;
-
-  state$: Observable<AppState>;
-
+  isHeaderVisible: boolean = true;
 
   constructor(
-    private store: Store<{ app : AppState}>
+    private sharedStateService : SharedStateService
   )
   {
     
   }
 
   ngOnInit(){
-    this.state$ = this.store.select('app');
-    this.state$.subscribe(state => {
-      this.isHeaderHidden = state.isHeaderHidden;
+    this.sharedStateService.isHeaderVisible$.subscribe(isVisible => {
+      this.isHeaderVisible = isVisible;
     });
   }
 
@@ -37,9 +30,9 @@ export class HeaderComponent {
   onScroll(event: Event): void {
     let scrollYOffset: number = window.scrollY;
     if (scrollYOffset <= this.lastScrollTop) {
-      this.store.dispatch(setField({ field : 'isHeaderHidden', value: false }));
+      this.sharedStateService.setHeaderVisibleState(true);
     } else {
-      this.store.dispatch(setField({ field : 'isHeaderHidden', value: true }));
+      this.sharedStateService.setHeaderVisibleState(false);
     }
     this.lastScrollTop = scrollYOffset;
   }

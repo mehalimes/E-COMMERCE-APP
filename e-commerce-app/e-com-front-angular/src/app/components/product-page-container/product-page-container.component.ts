@@ -1,14 +1,15 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Products from './../../../assets/data/product-data.json';
 import { Product } from '../container/container.component';
+import { SharedStateService } from '../../services/shared-state.service';
 
 @Component({
   selector: 'app-product-page-container',
   templateUrl: './product-page-container.component.html',
   styleUrl: './product-page-container.component.css',
 })
-export class ProductPageContainerComponent implements OnInit {
+export class ProductPageContainerComponent implements OnInit, AfterViewInit {
   Products: Product[] = Products;
 
   productId: number;
@@ -16,16 +17,15 @@ export class ProductPageContainerComponent implements OnInit {
   productSize: string = 'S';
   productQuantity: number = 1;
 
-  isPopUpHidden: boolean = false;
-
-  clickListener: () => void;
+  isPopUpVisible: boolean = false;
 
   @ViewChild('productQuantityRef') input: ElementRef;
   @ViewChild('decrementButtonRef') decrementButton: ElementRef;
   @ViewChild('addCartButton') addCartButton: ElementRef;
 
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private sharedStateService : SharedStateService
   ) 
   {
 
@@ -39,6 +39,14 @@ export class ProductPageContainerComponent implements OnInit {
         console.log(this.currentProduct);
       }
     });
+
+    this.sharedStateService.isPopUpVisible$.subscribe(isVisible => {
+      this.isPopUpVisible = isVisible;
+    });
+  }
+
+  ngAfterViewInit(){
+    
   }
 
   isPositiveNumber(num: number): boolean {
@@ -79,7 +87,7 @@ export class ProductPageContainerComponent implements OnInit {
     }
   }
 
-  async addCart(): Promise<void> {
-
+  addCart(): void {
+    this.sharedStateService.setPopUpVisibleState(true);
   }
 }
