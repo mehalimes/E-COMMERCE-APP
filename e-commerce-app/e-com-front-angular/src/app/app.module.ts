@@ -12,6 +12,10 @@ import { ProductPageContainerComponent } from './components/product-page-contain
 import { FormsModule } from '@angular/forms';
 import { PopUpComponent } from './components/pop-up/pop-up.component';
 import { ButtonComponent } from './components/button/button.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { QuantityInputComponent } from './components/quantity-input/quantity-input.component';
+import { CartPageContainerComponent } from './components/cart-page-container/cart-page-container.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { ButtonComponent } from './components/button/button.component';
     ProductPageComponent,
     ProductPageContainerComponent,
     PopUpComponent,
-    ButtonComponent
+    ButtonComponent,
+    CartPageComponent,
+    QuantityInputComponent,
+    CartPageContainerComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,

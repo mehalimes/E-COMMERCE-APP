@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedStateService } from '../../services/shared-state.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,8 @@ export class HeaderComponent {
   isHeaderVisible: boolean = true;
 
   constructor(
-    private sharedStateService : SharedStateService
+    private sharedStateService : SharedStateService,
+    private router : Router
   )
   {
     
@@ -36,4 +38,9 @@ export class HeaderComponent {
     }
     this.lastScrollTop = scrollYOffset;
   }
+
+  navigateToCart() : void {
+    this.router.navigate(['/cart']);
+  }
+
 }

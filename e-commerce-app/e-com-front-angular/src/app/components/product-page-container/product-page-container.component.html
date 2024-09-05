@@ -3,11 +3,7 @@
     <h1>{{ this.currentProduct.productName }}</h1>
     <span>₺{{ this.currentProduct.productPrice }} TRY</span>
     <label>Quantity</label>
-    <div class="quantity-container">
-        <button #decrementButtonRef (click)="decrement()" class="decrement-button">-</button>
-        <input #productQuantityRef [(ngModel)]="productQuantity" (focus)="productQuantityFocus()" (focusout)="productQuantityFocusOut()" (change)="productQuantityChange()"/>
-        <button (click)="increment()" class="increment-button">+</button>
-    </div>
+    <app-quantity-input></app-quantity-input>
     <label *ngIf="this.currentProduct.sizes !== undefined">Size</label>
     <div class="size-container" *ngIf="this.currentProduct.sizes !== undefined">
         <select name="sizes" class="sizes" [(ngModel)]="this.productSize">

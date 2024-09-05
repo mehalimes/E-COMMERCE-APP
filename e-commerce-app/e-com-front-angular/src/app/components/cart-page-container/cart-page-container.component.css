@@ -1,0 +1,63 @@
+/* Mobile S */
+@media (min-width: 320px) and (max-width: 374px) {
+}
+
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 424px) {
+}
+
+/* Mobile L */
+@media (min-width: 425px) and (max-width: 767px) {
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
+/* Laptop L */
+@media (min-width: 1440px) and (max-width: 2559px) {
+    :host {
+        display: block;
+        transform: translateY(160px);
+    }
+
+    div.cart-page-container {
+        background-color: blue;
+        min-height: 245px;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    div.cart-page-header {
+        height: 52px;
+        width: 100vw;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    h1 {
+        width: 70%;
+        height: 50px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    a {
+        width: 30%;
+        height: 50px;
+        line-height: 50px;
+        text-align: right;
+        padding-right: 10px;
+    }
+}
+
+/* 4K */
+@media (min-width: 2560px) {
+}

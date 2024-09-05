@@ -26,22 +26,24 @@
         transform: translate(-50%, -50%);
     }
 
-    svg#magnifying-glass-icon {
+    img#magnifying-glass-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         left: 60px;
         top: 50%;
-        transform: translateY(-50%);    
+        transform: translateY(-50%); 
+        cursor: pointer;  
     }
 
-    svg#cart-icon {
+    img#cart-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }
 
@@ -73,22 +75,24 @@
         transform: translate(-50%, -50%);
     }
 
-    svg#magnifying-glass-icon {
+    img#magnifying-glass-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         left: 60px;
         top: 50%;
-        transform: translateY(-50%);    
+        transform: translateY(-50%);
+        cursor: pointer;    
     }
 
-    svg#cart-icon {
+    img#cart-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }
 
@@ -120,22 +124,24 @@
         transform: translate(-50%, -50%);
     }
 
-    svg#magnifying-glass-icon {
+    img#magnifying-glass-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         left: 60px;
         top: 50%;
-        transform: translateY(-50%);    
+        transform: translateY(-50%);
+        cursor: pointer;    
     }
 
-    svg#cart-icon {
+    img#cart-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }
 
@@ -167,22 +173,24 @@
         transform: translate(-50%, -50%);
     }
 
-    svg#magnifying-glass-icon {
+    img#magnifying-glass-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         left: 60px;
         top: 50%;
-        transform: translateY(-50%);    
+        transform: translateY(-50%); 
+        cursor: pointer;   
     }
 
-    svg#cart-icon {
+    img#cart-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }
 
@@ -214,22 +222,24 @@
         transform: translate(-50%, -50%);
     }
 
-    svg#magnifying-glass-icon {
+    img#magnifying-glass-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 104px;
         top: 50%;
-        transform: translateY(-50%);    
+        transform: translateY(-50%); 
+        cursor: pointer;   
     }
 
-    svg#cart-icon {
+    img#cart-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }
 
@@ -262,22 +272,24 @@
         transform: translate(-50%, -50%);
     }
 
-    svg#magnifying-glass-icon {
+    img#magnifying-glass-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 104px;
         top: 50%;
-        transform: translateY(-50%);    
+        transform: translateY(-50%); 
+        cursor: pointer;   
     }
 
-    svg#cart-icon {
+    img#cart-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }
 
@@ -309,21 +321,23 @@
         transform: translate(-50%, -50%);
     }
 
-    svg#magnifying-glass-icon {
+    img#magnifying-glass-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 104px;
         top: 50%;
-        transform: translateY(-50%);    
+        transform: translateY(-50%);
+        cursor: pointer;    
     }
 
-    svg#cart-icon {
+    img#cart-icon {
         width: 24px;
         height: 24px;
         position: absolute;
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }

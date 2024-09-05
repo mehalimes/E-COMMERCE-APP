@@ -1,0 +1,48 @@
+/* Mobile S */
+@media (min-width: 320px) and (max-width: 374px) {
+
+}
+
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 424px) {
+
+}
+
+/* Mobile L */
+@media (min-width: 425px) and (max-width: 767px) {
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+}
+
+/* Laptop L */
+@media (min-width: 1440px) and (max-width: 2559px) {
+    img.cart-item-image {
+        width: 110px;
+        height: 110px;
+    }
+
+    tr.cart-item-container {
+        background-color: red;
+        width: 80vw;
+        height: 158px;
+    }
+
+    img.trash-icon {
+        width: 15px;
+        height: auto;
+    }
+}
+
+/* 4K */
+@media (min-width: 2560px) {
+
+}
