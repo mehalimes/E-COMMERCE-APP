@@ -1,46 +1,34 @@
 import {
-  AfterViewInit,
   Component,
   ElementRef,
   HostListener,
-  OnDestroy,
   OnInit,
-  ViewChild,
+  ViewChild
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { SharedStateService } from '../../services/shared-state.service';
-
+import { Product } from './../../interfaces/product';
+import Products from "./../../../assets/data/product-data.json";
 @Component({
   selector: 'app-pop-up',
   templateUrl: './pop-up.component.html',
   styleUrl: './pop-up.component.css',
 })
-export class PopUpComponent implements OnInit, OnDestroy, AfterViewInit {
+export class PopUpComponent implements OnInit {
   isHeaderVisible: boolean = true;
   isPopUpVisible: boolean = false;
+  productId: number;
+  currentProduct: Product;
 
   @ViewChild('popUpContainer') popUpContainer: ElementRef;
+  @ViewChild('popUpLabel') popUpLabel: ElementRef;
 
   constructor(
     private router: Router,
     private sharedStateService: SharedStateService
   ) {}
-
+  
   ngOnInit() {
-    this.sharedStateService.isHeaderVisible$.subscribe(isVisible => {
-      this.isHeaderVisible = isVisible;
-    });
-
-    this.sharedStateService.isPopUpVisible$.subscribe(isVisible => {
-      this.isPopUpVisible = isVisible;
-    });
-  }
-
-  ngOnDestroy() {
-
-  }
-
-  ngAfterViewInit() {
 
   }
 
@@ -58,11 +46,11 @@ export class PopUpComponent implements OnInit, OnDestroy, AfterViewInit {
     }
   }
 
-  async viewCartEvent(): Promise<void> {
-    await this.router.navigate(['/cart']);
+  viewCartEvent(): void {
+    this.router.navigate(['/cart']);
   }
 
-  async checkOutEvent(): Promise<void> {
-    await this.router.navigate(['/payment-page']);
+  checkOutEvent(): void {
+    this.router.navigate(['/payment-page']);
   }
 }

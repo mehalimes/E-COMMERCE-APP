@@ -1,4 +1,4 @@
-<div class="quantity-container">
+<div class="quantity-container" [ngClass]="this.className">
     <button #decrementButtonRef (click)="decrement()" class="decrement-button">-</button>
     <input #productQuantityRef [(ngModel)]="productQuantity" (focus)="productQuantityFocus()" (focusout)="productQuantityFocusOut()" (change)="productQuantityChange()"/>
     <button (click)="increment()" class="increment-button">+</button>

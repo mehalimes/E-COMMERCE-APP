@@ -1,36 +1,46 @@
-import { Component, Input } from '@angular/core';
-import { Store } from '@ngrx/store';
+import { Component, Input, OnInit } from '@angular/core';
 import { SharedStateService } from '../../services/shared-state.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
+  styleUrl: './button.component.css',
 })
-export class ButtonComponent {
+export class ButtonComponent implements OnInit {
   @Input() buttonEventProp: () => void | Promise<void>;
   @Input() buttonNameProp: string;
-  @Input() styleProp?: { [key : string] : string };
+  @Input() styleProp?: { [key: string]: string };
   @Input() classProp?: string;
+
+  productId: number;
 
   isLoading: boolean = false;
 
   constructor(
-    private sharedStateService : SharedStateService
-  )
-  {
+    private router : Router,
+    private route: ActivatedRoute,
+    private sharedStateService: SharedStateService
+  ) {}
 
+  ngOnInit(){
+    this.sharedStateService.productId$.subscribe(productId => {
+      this.productId = productId;
+    });
   }
 
-  async onClick(){
+  async onClick() {
     this.isLoading = true;
     try {
-      await this.buttonEventProp();
-    }
-    catch(err) {
+      const result = this.buttonEventProp();
+      if (result instanceof Promise) {
+        await result;
+      } else {
+        result;
+      }
+    } catch (err) {
       console.log(err);
-    }
-    finally {
+    } finally {
       this.isLoading = false;
     }
   }

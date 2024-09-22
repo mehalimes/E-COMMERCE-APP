@@ -1,17 +1,20 @@
-<tr class="cart-item-container">
-    <td class="cart-item-first">
+<div class="cart-item-container">
+    <div class="first">
         <img class="cart-item-image" src="./../../../assets/images/mug.webp"/>
-    </td>
-    <td class="cart-item-second">
+    </div>
+    <div class="second">
         <h5>Is it Chai or Cha</h5>
         <h6>$18.00</h6>
-    </td>
-    <td class="cart-item-third">
+    </div>
+    <div class="third">
         <app-quantity-input
-        ><!-- Prop Geç --></app-quantity-input>
+            [className]="'cart-item-quantity-input'"
+        >
+        <!-- Prop Geç -->
+        </app-quantity-input>
         <img class="trash-icon" src="./../../../assets/images/trash.svg"/>
-    </td>
-    <td class="cart-item-fourth">
+    </div>
+    <div class="fourth">
         $18.00
-    </td>
-</tr>
+    </div>
+</div>

@@ -5,10 +5,10 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: '/home', pathMatch: 'full' },
-  { path: "home", component: HomeComponent, pathMatch: 'full' },
-  { path: "product-page/:productId", component: ProductPageComponent, pathMatch: 'full' },
-  { path: "cart", component: CartPageComponent, pathMatch: 'full' }
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent, pathMatch: 'full' },
+  { path: 'product-page/:productId', component: ProductPageComponent, pathMatch: 'full' },
+  { path: 'cart', component: CartPageComponent, pathMatch: 'full' }
 ];
 
 @NgModule({

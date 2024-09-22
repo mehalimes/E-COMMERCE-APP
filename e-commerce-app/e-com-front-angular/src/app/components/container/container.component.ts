@@ -1,14 +1,6 @@
 import { Component } from '@angular/core';
 import Products from './../../../assets/data/product-data.json';
-
-export interface Product {
-  productImage: string;
-  stockCount: number;
-  productName: string;
-  productPrice: number;
-  productId: number;
-  sizes: string[];
-}
+import { Product } from "./../../interfaces/product";
 
 @Component({
   selector: 'app-container',

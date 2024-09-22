@@ -1,11 +1,14 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-quantity-input',
   templateUrl: './quantity-input.component.html',
-  styleUrl: './quantity-input.component.css'
+  styleUrls: ['./quantity-input.component.css']
 })
 export class QuantityInputComponent {
+  @Input() className?: string = "";
+
+  isClassNamePassed: boolean = false;
   productQuantity: number = 1;
 
   @ViewChild('decrementButtonRef') decrementButton: ElementRef;

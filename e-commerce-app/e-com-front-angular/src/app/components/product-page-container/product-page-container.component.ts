@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Products from './../../../assets/data/product-data.json';
-import { Product } from '../container/container.component';
+import { Product } from './../../interfaces/product';
 import { SharedStateService } from '../../services/shared-state.service';
 
 @Component({
@@ -16,6 +16,7 @@ export class ProductPageContainerComponent implements OnInit {
   currentProduct: Product;
   productSize: string = 'S';
   productQuantity: number = 1;
+  cartItems : { [key : number] : number } = {};
 
   isPopUpVisible: boolean = false;
   
@@ -31,16 +32,16 @@ export class ProductPageContainerComponent implements OnInit {
 
   ngOnInit() {
     this.productId = Number(this.route.snapshot.paramMap.get('productId'));
-    this.Products.forEach((item) => {
-      if (Number(item.productId) === this.productId) {
-        this.currentProduct = item;
-        console.log(this.currentProduct);
-      }
-    });
+    this.sharedStateService.setProductId(this.productId);
 
-    this.sharedStateService.isPopUpVisible$.subscribe(isVisible => {
-      this.isPopUpVisible = isVisible;
-    });
+      this.sharedStateService.isPopUpVisible$.subscribe(isVisible => {
+        this.isPopUpVisible = isVisible;
+      })
+
+
+      this.sharedStateService.productId$.subscribe(productId => {
+        this.productId = productId;
+      })
   }
 
   addCart(): void {

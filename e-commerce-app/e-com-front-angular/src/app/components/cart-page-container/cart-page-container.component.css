@@ -26,20 +26,21 @@
     }
 
     div.cart-page-container {
-        background-color: blue;
+        background-color: white;
         min-height: 245px;
         width: 80vw;
         margin-left: 10vw;
     }
 
     div.cart-page-header {
-        height: 52px;
+        height: 72px;
         width: 100vw;
-        background-color: yellow;
+        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        padding-bottom: 20px;
     }
 
     h1 {
@@ -55,6 +56,44 @@
         line-height: 50px;
         text-align: right;
         padding-right: 10px;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        color: black;
+    }
+
+    div.cart-page-sub-header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 40px;
+    }
+
+    span {
+        font-size: 10px;
+        font-weight: 400;
+        color: gray;
+        letter-spacing: 1px;
+    }
+
+    span:nth-child(1) {
+        display: flex;
+        padding-left: 40px;
+        height: 100%;
+        align-items: center;
+    }
+
+    span:nth-child(2){
+        display: flex;
+        padding-left: 770px;
+        height: 100%;
+        align-items: center;
+    }
+
+    span:nth-child(3){
+        display: flex;
+        padding-left: 140px;
+        height: 100%;
+        align-items: center;
     }
 }
 

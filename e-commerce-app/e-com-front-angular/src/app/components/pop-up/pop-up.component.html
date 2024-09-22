@@ -10,9 +10,11 @@
     </label>
     <img class="xmark" src="./../../../assets/images/xmark.svg"/>
     <div class="row">
-        <img class="product-photo" src="./../../../assets/images/bag.webp"/>
+        <img *ngIf="this.currentProduct" class="product-photo" [src]="this.currentProduct.productImage"/>
         <div class="col">
-            <label>Kulfi In My Heart</label>
+            <label
+                #popUpLabel
+            >{{ this.currentProduct.productName }}</label>
             <label>Size : S</label>
         </div>
     </div>
