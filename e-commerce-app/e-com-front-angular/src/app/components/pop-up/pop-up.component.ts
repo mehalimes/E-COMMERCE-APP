@@ -2,34 +2,30 @@ import {
   Component,
   ElementRef,
   HostListener,
-  OnInit,
   ViewChild
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { SharedStateService } from '../../services/shared-state.service';
-import { Product } from './../../interfaces/product';
-import Products from "./../../../assets/data/product-data.json";
+
 @Component({
   selector: 'app-pop-up',
   templateUrl: './pop-up.component.html',
   styleUrl: './pop-up.component.css',
 })
-export class PopUpComponent implements OnInit {
-  isHeaderVisible: boolean = true;
-  isPopUpVisible: boolean = false;
-  productId: number;
-  currentProduct: Product;
-
+export class PopUpComponent {
   @ViewChild('popUpContainer') popUpContainer: ElementRef;
   @ViewChild('popUpLabel') popUpLabel: ElementRef;
+  isTextLong: boolean = false;
 
   constructor(
     private router: Router,
-    private sharedStateService: SharedStateService
+    public sharedStateService: SharedStateService,
   ) {}
-  
-  ngOnInit() {
 
+  ngAfterViewInit() {
+    this.isTextLong = this.popUpLabel.nativeElement.textContent.length >= 50;
+    // ilk yüklendiğinde olmuyor ikinci de true oluyor
+    console.log(this.isTextLong);
   }
 
   @HostListener('document:click', ['$event'])
@@ -37,12 +33,11 @@ export class PopUpComponent implements OnInit {
     const clickedInside: boolean = this.popUpContainer?.nativeElement?.contains(event.target) ?? false;
     const addCartButtonClicked: boolean = (event.target as HTMLElement).classList.contains('add-button');
     
-    if(!this.isPopUpVisible && addCartButtonClicked){
-      this.sharedStateService.setPopUpVisibleState(true);
+    if(!this.sharedStateService.isPopUpVisible && addCartButtonClicked){
+      this.sharedStateService.isPopUpVisible = true;
     }
-
-    else if(this.isPopUpVisible && !clickedInside && !addCartButtonClicked){
-      this.sharedStateService.setPopUpVisibleState(false);
+    else if(this.sharedStateService.isPopUpVisible && !clickedInside && !addCartButtonClicked){
+      this.sharedStateService.isPopUpVisible = false;
     }
   }
 

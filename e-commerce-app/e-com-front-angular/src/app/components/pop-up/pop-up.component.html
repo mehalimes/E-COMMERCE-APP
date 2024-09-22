@@ -1,8 +1,8 @@
 <div 
     #popUpContainer 
     class="pop-up-container" 
-    [ngClass]="{ 'translate' : !this.isHeaderVisible }"
-    *ngIf="this.isPopUpVisible"
+    [ngClass]="{ 'translate' : !this.sharedStateService.isHeaderVisible }"
+    *ngIf="this.sharedStateService.isPopUpVisible"
 >
     <label class="header-label">
         <img class="check" src="./../../../assets/images/check.svg"/>
@@ -10,12 +10,19 @@
     </label>
     <img class="xmark" src="./../../../assets/images/xmark.svg"/>
     <div class="row">
-        <img *ngIf="this.currentProduct" class="product-photo" [src]="this.currentProduct.productImage"/>
+        <img 
+            *ngIf="this.sharedStateService.currentProduct" 
+            class="product-photo" 
+            [src]="this.sharedStateService.currentProduct.productImage"
+        />
         <div class="col">
             <label
                 #popUpLabel
-            >{{ this.currentProduct.productName }}</label>
-            <label>Size : S</label>
+                [ngClass]="{ 'padding-top' : !this.isTextLong }"
+            >
+                {{ this.sharedStateService.currentProduct.productName }}
+            </label>
+            <label *ngIf="this.sharedStateService.currentProduct.sizes !== undefined">Size : S</label>
         </div>
     </div>
     <app-button

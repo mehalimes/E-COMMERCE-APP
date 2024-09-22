@@ -15,7 +15,7 @@ export class HeaderComponent {
   isHeaderVisible: boolean = true;
 
   constructor(
-    private sharedStateService : SharedStateService,
+    public sharedStateService : SharedStateService,
     private router : Router
   )
   {
@@ -23,18 +23,16 @@ export class HeaderComponent {
   }
 
   ngOnInit(){
-    this.sharedStateService.isHeaderVisible$.subscribe(isVisible => {
-      this.isHeaderVisible = isVisible;
-    });
+    
   }
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event): void {
     let scrollYOffset: number = window.scrollY;
     if (scrollYOffset <= this.lastScrollTop) {
-      this.sharedStateService.setHeaderVisibleState(true);
+      this.sharedStateService.isHeaderVisible = true;
     } else {
-      this.sharedStateService.setHeaderVisibleState(false);
+      this.sharedStateService.isHeaderVisible = false;
     }
     this.lastScrollTop = scrollYOffset;
   }

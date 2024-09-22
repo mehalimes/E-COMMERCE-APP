@@ -69,10 +69,16 @@
         padding: 0;
     }
 
-    div.col > label {
-        margin-left: 10px;
+    div.col label:nth-child(1){
+        margin-left: 15px;
         display: block;
+        min-height: 30px;
+    }
+
+    div.col label:nth-child(2) {
+        margin-left: 15px;
         margin-top: 10px;
+        display: block;
     }
 
     a {
@@ -88,6 +94,10 @@
 
     .translate {
         transform: translateY(-155px);
+    }
+
+    .padding-top {
+        padding-top: 15px;
     }
 }
 

@@ -1,4 +1,4 @@
-<div class="header" [ngClass]="{ 'hidden' : !this.isHeaderVisible }">
+<div class="header" [ngClass]="{ 'hidden' : !this.sharedStateService.isHeaderVisible }">
     <img id="logo" src="./../../../assets/images/logo.webp"/>
     <img id="magnifying-glass-icon" src="./../../../assets/images/magnifying_glass.svg"/>
     <img id="cart-icon" src="./../../../assets/images/cart.svg" (click)="navigateToCart()"/>

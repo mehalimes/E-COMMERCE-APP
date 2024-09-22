@@ -1,13 +1,13 @@
-<div class="left-container" [ngStyle]="{ 'background-image' : 'url(' + this.currentProduct.productImage + ')' }"></div>
+<div class="left-container" [ngStyle]="{ 'background-image' : 'url(' + this.sharedStateService.currentProduct.productImage + ')' }"></div>
 <div class="right-container">
-    <h1>{{ this.currentProduct.productName }}</h1>
-    <span>₺{{ this.currentProduct.productPrice }} TRY</span>
+    <h1>{{ this.sharedStateService.currentProduct.productName }}</h1>
+    <span>₺{{ this.sharedStateService.currentProduct.productPrice }} TRY</span>
     <label>Quantity</label>
     <app-quantity-input></app-quantity-input>
-    <label *ngIf="this.currentProduct.sizes !== undefined">Size</label>
-    <div class="size-container" *ngIf="this.currentProduct.sizes !== undefined">
+    <label *ngIf="this.sharedStateService.currentProduct.sizes !== undefined">Size</label>
+    <div class="size-container" *ngIf="this.sharedStateService.currentProduct.sizes !== undefined">
         <select name="sizes" class="sizes" [(ngModel)]="this.productSize">
-            <option *ngFor="let size of this.currentProduct.sizes" [value]="size">{{ size }}</option>
+            <option *ngFor="let size of this.sharedStateService.currentProduct.sizes" [value]="size">{{ size }}</option>
         </select>
     </div>
     <app-button 

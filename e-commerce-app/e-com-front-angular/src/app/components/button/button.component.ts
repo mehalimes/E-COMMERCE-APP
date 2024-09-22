@@ -24,9 +24,7 @@ export class ButtonComponent implements OnInit {
   ) {}
 
   ngOnInit(){
-    this.sharedStateService.productId$.subscribe(productId => {
-      this.productId = productId;
-    });
+    
   }
 
   async onClick() {

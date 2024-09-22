@@ -12,8 +12,6 @@ import { SharedStateService } from '../../services/shared-state.service';
 export class ProductPageContainerComponent implements OnInit {
   Products: Product[] = Products;
 
-  productId: number;
-  currentProduct: Product;
   productSize: string = 'S';
   productQuantity: number = 1;
   cartItems : { [key : number] : number } = {};
@@ -24,27 +22,22 @@ export class ProductPageContainerComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private sharedStateService : SharedStateService
+    public sharedStateService : SharedStateService
   ) 
   {
 
   }
 
   ngOnInit() {
-    this.productId = Number(this.route.snapshot.paramMap.get('productId'));
-    this.sharedStateService.setProductId(this.productId);
-
-      this.sharedStateService.isPopUpVisible$.subscribe(isVisible => {
-        this.isPopUpVisible = isVisible;
-      })
-
-
-      this.sharedStateService.productId$.subscribe(productId => {
-        this.productId = productId;
-      })
+    this.sharedStateService.productId = Number(this.route.snapshot.paramMap.get('productId'));
+    Products.forEach(item => {
+      if(Number(item.productId) === this.sharedStateService.productId){
+        this.sharedStateService.currentProduct = item;
+      }
+    });
   }
 
   addCart(): void {
-    this.sharedStateService.setPopUpVisibleState(true);
+    this.sharedStateService.isPopUpVisible = true;
   }
 }
